@@ -9,17 +9,30 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      myName: "Buddy",
+      myLessons: [],
     };
+  }
+
+  componentDidMount() {
+    fetch("./data.json")
+      .then((response) => response.json())
+      .then((result) => {
+        const lessons = result.map((item) => {
+          return item;
+        });
+        this.setState({
+          myLessons: lessons,
+        });
+      });
   }
 
   render() {
     return (
-      <main class="page bg-white" id="petratings">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 bg-white">
-              <div class="container">
+      <main className="page bg-white" id="petratings">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 bg-white">
+              <div className="container">
                 <AddLesson />
                 <SearchLessons />
                 <ListLessons />
