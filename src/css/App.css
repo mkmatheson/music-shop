@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+.add-lesson .card-body {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lesson-addheading {
+  cursor: pointer;
+  user-select: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lesson-list {
+  font-size: 1.1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lesson-list .student-item {
+  border-bottom: 1px dotted gray;
 }
 
-.App-link {
-  color: #61dafb;
+.lesson-list .student-item:last-child {
+  border-bottom: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lesson-list .student-name {
+  font-weight: 600;
+  color: #337ab7;
+  font-size: 1.3em;
+  line-height: 100%;
+}
+
+.lesson-list .label-item {
+  font-weight: 600;
+  color: #667b82;
+}
+
+.lesson-list .apt-date {
+  font-style: italic;
+}
+
+.lesson-list .apt-notes {
+  line-height: 120%;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #a9aeb2;
 }

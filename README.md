@@ -1,3 +1,7 @@
+## About this project
+
+this is based off of Ray Villalobos' LinkedIn Learning course "Building an Interface"
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
