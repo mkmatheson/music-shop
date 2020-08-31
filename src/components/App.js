@@ -35,7 +35,7 @@ class App extends Component {
               <div className="container">
                 <AddLesson />
                 <SearchLessons />
-                <ListLessons />
+                <ListLessons lessons={this.state.myLessons} />
               </div>
             </div>
           </div>
