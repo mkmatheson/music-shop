@@ -1,61 +1,62 @@
 [
   {
     "studentName": "Jim",
-    "instrument": "Kazoo",
+    "instrumentName": "Kazoo",
     "studentNotes": "Jim Halpert was born on October 1, 1978, to Gerald and Betsy Halpert. He has two brothers; Pete, who lives in Boston, and Tom, who lives in New Jersey. They both share Jim's general love of pranks but have come across as unpleasant and they somewhat bully their little brother. Jim's parents presumably live in Scranton, as well as his sister Larisa and best friend Alan Murphy, who are listed as his emergency contacts",
-    "lessonDate": "2018-11-28 13:30"
+    "lessonDate": "2020-11-28 13:30"
   },
   {
     "studentName": "Pam",
-    "instrument": "Piano",
+    "instrumentName": "Piano",
     "studentNotes": "Pam does not want her current job to become permanent, remarking that \"I don't think it's many little girls' dream to be a receptionist.\" Pam is apathetic toward her work, evidenced by her frequent games of FreeCell on her office computer.",
-    "lessonDate": "2018-11-28 10:15"
+    "lessonDate": "2020-11-28 10:15"
   },
   {
     "studentName": "Darryl",
-    "instrument": "Electric Keyboard",
+    "instrumentName": "Electric Keyboard",
     "studentNotes": "Darryl Philbin is the foreman of the warehouse of the Scranton branch of paper distributor Dunder Mifflin.",
-    "lessonDate": "2018-11-28 14:45"
+    "lessonDate": "2020-11-28 14:45"
   },
   {
     "studentName": "Kevin",
-    "instrument": "Drums",
+    "instrumentName": "Drums",
     "studentNotes": "Kevin is of Irish descent and did not grow up around Scranton. Kevin received a job as an accountant at Dunder Mifflin after applying for a job in the warehouse because Michael Scott had \"a feeling about him.\"",
-    "lessonDate": "2018-11-28 16:00"
+    "lessonDate": "2020-11-28 16:00"
   },
   {
     "studentName": "Andy",
-    "instrument": "Percussion",
+    "instrumentName": "Percussion",
     "studentNotes": "Andy claims to have been born and raised in Simsbury, Connecticut. His birth name was Walter Bernard Jr., but after his younger brother was born, his parents decided that the new baby better embodied that name and should be named after his father instead. Thus, the original Walter was renamed Andrew, a name taken from a book of baby names. He claims to have been an obese child, though he never talks about it. It can be assumed that Andy's family was considerably wealthy growing up, as he admits that whenever anybody wanted something they would write it on a list for the housekeeper to get.",
-    "lessonDate": "2018-11-28 9:00"
+    "lessonDate": "2020-11-28 9:00"
   },
   {
     "studentName": "Michael",
-    "instrument": "Voice",
-    "studentNotes": "Michael Gary Scott was born March 15, 1964, in Scranton, Pennsylvania. He came from a relatively difficult childhood of loneliness. Michael had some trouble with his early education"
+    "instrumentName": "Voice",
+    "studentNotes": "Michael Gary Scott was born March 15, 1964, in Scranton, Pennsylvania. He came from a relatively difficult childhood of loneliness. Michael had some trouble with his early education",
+    "lessonDate": "2020-12-29 10:00"
   },
   {
     "studentName": "Dwight",
-    "instrument": "Flute",
+    "instrumentName": "Flute",
     "studentNotes": "Dwight Schrute is a competent salesman, despite lacking general knowledge, at the Scranton branch of the paper distribution company, Dunder Mifflin. Dwight formally held the title of \"Assistant to the Regional Manager\"",
-    "lessonDate": "2018-11-29 10:00"
+    "lessonDate": "2020-11-29 10:00"
   },
   {
     "studentName": "Janet",
-    "instrument": "Piano",
+    "instrumentName": "Piano",
     "studentNotes": "Jan Levinson-Gould, as Vice President of Sales at Dunder Mifflin, has a no-nonsense management style that is at odds with Michael's more casual approach. Since her office is in New York, Jan's contact with the Scranton branch is largely by telephone, although she will make the two-and-a-half-hour drive to Scranton if necessary.",
-    "lessonDate": "2018-11-29 11:45"
+    "lessonDate": "2020-11-29 11:45"
   },
   {
     "studentName": "Robert",
-    "instrument": "Harmonica",
+    "instrumentName": "Harmonica",
     "studentNotes": "Robert California is the former CEO of Dunder Mifflin/Sabre. An enigmatic individual, he was often inspiring and intimidating to the staff in the Scranton branch office, especially so to Regional Manager Andy Bernard.",
-    "lessonDate": "2018-11-29 11:45"
+    "lessonDate": "2020-11-29 11:45"
   },
   {
     "studentName": "Creed",
-    "instrument": "Guitar",
+    "instrumentName": "Guitar",
     "studentNotes": "Little is known about Creed's life outside the office. The scattered details that emerge (as well as his behavior in the office) are invariably bizarre and it is unknown how much of what he says is true. In fact, much of what he does say is either unsettling or downright disturbing, sometimes even describing violent crimes he claims to have committed or plans to commit. Despite all of this, Creed is outwardly quite cheery most of the time and is tolerated (or simply ignored) by his fellow employees.",
-    "lessonDate": "2018-11-29 11:45"
+    "lessonDate": "2020-11-29 11:45"
   }
 ]

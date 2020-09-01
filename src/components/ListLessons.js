@@ -29,7 +29,7 @@ const ListLessons = ({ lessons, deleteLesson }) => {
 
           <div className="instrument-name">
             <span className="label-item">Instrument: </span>
-            <span>{item.instrument}</span>
+            <span>{item.instrumentName}</span>
           </div>
           <div className="lesson-notes">{item.studentNotes}</div>
         </div>

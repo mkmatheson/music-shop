@@ -9,7 +9,7 @@ class AddLesson extends React.Component {
       instrumentName: "",
       lessonDate: "",
       lessonTime: "",
-      lessonNotes: "",
+      studentNotes: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleAdd = this.handleAdd.bind(this);
@@ -23,7 +23,7 @@ class AddLesson extends React.Component {
       instrumentName: this.state.instrumentName,
       lessonDate: this.state.lessonDate,
       lessonTime: this.state.lessonTime,
-      lessonNotes: this.state.lessonNotes,
+      studentNotes: this.state.studentNotes,
     };
 
     this.props.addLesson(tempLesson);
@@ -33,7 +33,7 @@ class AddLesson extends React.Component {
       instrumentName: "",
       lessonDate: "",
       lessonTime: "",
-      lessonNotes: "",
+      studentNotes: "",
     });
 
     this.props.toggleForm();
@@ -97,7 +97,7 @@ class AddLesson extends React.Component {
                 <input
                   type="text"
                   className="form-control"
-                  name="instrument"
+                  name="instrumentName"
                   placeholder="Instrument"
                   value={this.state.instrumentName}
                   onChange={this.handleChange}
@@ -141,7 +141,7 @@ class AddLesson extends React.Component {
             </div>
 
             <div className="form-group form-row">
-              <label className="col-md-2 text-md-right" htmlFor="lessonNotes">
+              <label className="col-md-2 text-md-right" htmlFor="studentNotes">
                 Lesson Notes
               </label>
               <div className="col-md-10">
@@ -149,10 +149,10 @@ class AddLesson extends React.Component {
                   className="form-control"
                   rows="4"
                   cols="50"
-                  name="lessonNotes"
-                  id="lessonNotes"
+                  name="studentNotes"
+                  id="studentNotes"
                   placeholder="Lesson Notes"
-                  value={this.state.lessonNotes}
+                  value={this.state.studentNotes}
                   onChange={this.handleChange}
                 />
               </div>

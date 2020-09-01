@@ -13,11 +13,14 @@ class App extends Component {
     this.state = {
       myLessons: [],
       formDisplay: true,
+      orderBy: "studentName",
+      orderDir: "asc",
       lastIndex: 0,
     };
     this.deleteLesson = this.deleteLesson.bind(this);
     this.toggleForm = this.toggleForm.bind(this);
     this.addLesson = this.addLesson.bind(this);
+    this.changeOrder = this.changeOrder.bind(this);
   }
 
   addLesson(lesson) {
@@ -46,6 +49,13 @@ class App extends Component {
     });
   }
 
+  changeOrder(order, dir) {
+    this.setState({
+      orderBy: order,
+      orderDir: dir,
+    });
+  }
+
   componentDidMount() {
     fetch("./data.json")
       .then((response) => response.json())
@@ -62,6 +72,17 @@ class App extends Component {
   }
 
   render() {
+    let order;
+    let filteredLessons = this.state.myLessons;
+    this.state.orderDir === "asc" ? (order = 1) : (order = -1); //return asc or desc
+
+    filteredLessons.sort((a, b) => {
+      console.log(a[this.state.orderBy]);
+      return a[this.state.orderBy].toLowerCase() <
+        b[this.state.orderBy].toLowerCase()
+        ? -1 * order //multiplying by order var lets me reverse the sort
+        : 1 * order;
+    });
     return (
       <main className="page bg-white" id="petratings">
         <div className="container">
@@ -73,9 +94,13 @@ class App extends Component {
                   toggleForm={this.toggleForm}
                   addLesson={this.addLesson}
                 />
-                <SearchLessons />
+                <SearchLessons
+                  orderBy={this.state.orderBy}
+                  orderDir={this.state.orderDir}
+                  changeOrder={this.changeOrder}
+                />
                 <ListLessons
-                  lessons={this.state.myLessons}
+                  lessons={filteredLessons}
                   deleteLesson={this.deleteLesson}
                 />
               </div>
