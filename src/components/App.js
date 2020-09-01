@@ -5,7 +5,7 @@ import AddLesson from "./AddLesson";
 import SearchLessons from "./SearchLessons";
 import ListLessons from "./ListLessons";
 
-import { without } from "lodash";
+import { without, findIndex } from "lodash";
 
 class App extends Component {
   constructor() {
@@ -23,6 +23,7 @@ class App extends Component {
     this.addLesson = this.addLesson.bind(this);
     this.changeOrder = this.changeOrder.bind(this);
     this.searchLessons = this.searchLessons.bind(this);
+    this.updateInfo = this.updateInfo.bind(this);
   }
 
   addLesson(lesson) {
@@ -60,6 +61,17 @@ class App extends Component {
 
   searchLessons(query) {
     this.setState({ queryText: query });
+  }
+
+  updateInfo(name, value, id) {
+    let tempLessons = this.state.myLessons;
+    let lessonIndex = findIndex(this.state.myLessons, {
+      lessonId: id,
+    });
+    tempLessons[lessonIndex][name] = value;
+    this.setState({
+      myLessons: tempLessons,
+    });
   }
 
   componentDidMount() {
@@ -126,6 +138,7 @@ class App extends Component {
                 <ListLessons
                   lessons={filteredLessons}
                   deleteLesson={this.deleteLesson}
+                  updateInfo={this.updateInfo}
                 />
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { FaTimes } from "react-icons/fa";
 import Moment from "react-moment";
 
-const ListLessons = ({ lessons, deleteLesson }) => {
+const ListLessons = ({ lessons, deleteLesson, updateInfo }) => {
   return lessons.map((item) => (
     <div key={item.lessonId} className="lesson-list item-list mb-3">
       <div className="student-item col media py-3">
@@ -17,7 +17,16 @@ const ListLessons = ({ lessons, deleteLesson }) => {
 
         <div className="student-info media-body">
           <div className="student-head d-flex">
-            <span className="student-name">{item.studentName}</span>
+            <span
+              className="student-name"
+              contentEditable
+              suppressContentEditableWarning
+              onBlur={(e) =>
+                updateInfo("studentName", e.target.innerText, item.lessonId)
+              }
+            >
+              {item.studentName}
+            </span>
             <span className="lesson-date ml-auto">
               <Moment
                 date={item.lessonDate}
@@ -29,9 +38,26 @@ const ListLessons = ({ lessons, deleteLesson }) => {
 
           <div className="instrument-name">
             <span className="label-item">Instrument: </span>
-            <span>{item.instrumentName}</span>
+            <span
+              contentEditable
+              suppressContentEditableWarning
+              onBlur={(e) =>
+                updateInfo("instrumentName", e.target.innerText, item.lessonId)
+              }
+            >
+              {item.instrumentName}
+            </span>
           </div>
-          <div className="lesson-notes">{item.studentNotes}</div>
+          <div
+            className="lesson-notes"
+            contentEditable
+            suppressContentEditableWarning
+            onBlur={(e) =>
+              updateInfo("studentNotes", e.target.innerText, item.lessonId)
+            }
+          >
+            {item.studentNotes}
+          </div>
         </div>
       </div>
     </div>
