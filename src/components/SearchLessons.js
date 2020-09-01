@@ -1,6 +1,6 @@
 import React from "react";
 
-const SearchLessons = ({ orderBy, orderDir, changeOrder }) => {
+const SearchLessons = ({ orderBy, orderDir, changeOrder, searchLessons }) => {
   return (
     <div className="search-lessons row justify-content-center my-4">
       <div className="col-md-6">
@@ -10,6 +10,7 @@ const SearchLessons = ({ orderBy, orderDir, changeOrder }) => {
             type="text"
             className="form-control"
             aria-label="Search Lessons"
+            onChange={(e) => searchLessons(e.target.value)}
           />
           <div className="input-group-append">
             <button
